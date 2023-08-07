@@ -1,67 +1,90 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing:border-box;
     text-decoration: none;
-}
-
-.header{
-    position:fixed;
-    width:100%;
-    font-family: 'ubuntu','sans-serif';
-    background: lightcoral;
-    padding:  15px 0;
-}
-.container{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin:auto;
-}
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.header .logo a{
-    color: #fff;
-    font-size: 45px;
-    font-weight:700;
-}
-.header .list li{
     list-style: none;
-    display: inline-block;
 }
-.header .list li a{
-    color:#fff;
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 25px;
+body{
+    background: #1f1f21;
+    color: #fff;
+    overflow-x:hidden;
+}
 
+header{
+    top:0;
+    right:0;
+    margin:0;
+    width:100%;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    padding:20px 15%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    color: #fff;
+    font-size: 40px;
+    font-weight:600;
+}
+.logo span{
+    color: #ffae00;
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin:0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color:#ffae00;
+}
+
+.navbar a.active{
+    color:#ffae00;
+}
+.menu-btn{
+    background: linear-gradient(13008deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-items:center;
+    display:flex;
+    border-radius: 100px;
+}
+#menu-icon{
+    font-size: 25px;
+    margin-left: 10px;
+    z-index:6;
+}
+.section{
+    padding: 0 15%;
 }
 .home{
-    display:flex;
+    position: relative;
+    width: 100%;
     height:100vh;
-    background-color:#1f1f21;
-    color:#fff;
-    min-height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
 }
-
-.home .container{
-    margin:auto 0 auto 40px;
+.home-img{
+    width:730px;
+    height: 600px;
 }
-.myimg{
-    top:5em;
-}
-.home .content-home .text01{
-    font-size: 27px;
-}
-.home .content-home .text02{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -5px;
-}
-.home .content-home .text03{
-    font-size: 40px;
-    margin: 5px 0;
+.home-img img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
 }
