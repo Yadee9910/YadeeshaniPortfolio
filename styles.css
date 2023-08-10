@@ -6,9 +6,10 @@
     text-decoration: none;
     list-style: none;
 }
+
 body{
-    background: #1f1f21;
     color: #fff;
+    background: #1f1f1f;
     overflow-x:hidden;
 }
 
@@ -37,8 +38,8 @@ header{
 .navbar{
     display:flex;
     flex-direction: row;
-
 }
+
 .navbar a{
     color: #fff;
     font-size: 1.1rem;
@@ -74,7 +75,7 @@ header{
 .home{
     position: relative;
     width: 100%;
-    height:100vh;
+    height:auto;
     align-items: center;
     display: flex;
     justify-content:space-between;
@@ -123,6 +124,75 @@ header{
     color:#ffae00;
 }
 
+.aboutsection{
+    background:#3b3b3b;
+    padding: 73px 0;
+    height:auto;  
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.about-title{
+    color:#fff;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;   
+}
+
+.about-left{
+    width:330px;
+    height: auto;
+    border: 1px solid #ffae00;
+    margin-left: 12%;
+    padding-bottom:2%;
+    background: #ffae00;
+    justify-content: flex-start;
+}
+.about-left img{
+    width:300px;
+    object-fit:c0ntain;  
+    border-radius: 6px;
+}
+.about-right{
+    width: 60%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    right:auto;
+    left:auto;
+    justify-content:center;
+    padding-right: 12%;
+}
+.about-right p{
+    text-align:justify;
+    font-size:18px;
+    width:80%;
+}
+.work{
+    margin:20px;
+    padding: 73px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height:auto;
+}
+.work-header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    cursor: pointer;
+}
+.work-content{
+    display:none;
+    margin-top:10px;
+}
+.section-content.active{
+    display:block;
+}
 /*@media (max-width: 1850px){
     header{
         padding: 15px 4%;
@@ -134,7 +204,7 @@ header{
     }   
 }*/
 
-@media (max-width:950px){
+/*@media (max-width:950px){
     section{
         padding:60px 4%;
     }
@@ -189,4 +259,4 @@ header{
     .navbar.open {
         left:0;
     }
-}
+}*/
