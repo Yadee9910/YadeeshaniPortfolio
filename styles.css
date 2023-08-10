@@ -13,7 +13,6 @@ body{
     overflow-x:hidden;
 }
 
-/*Styling the Header*/
 header{
     top:0;
     right:0;
@@ -24,7 +23,7 @@ header{
     align-items: center;
     justify-content:space-between;
     position: fixed;
-    padding:10px 5%;
+    padding:10px 8%;
     background: transparent;
     transition: all ease .45s;
     background-color: #ffae00;
@@ -33,7 +32,6 @@ header{
     color: #fff;
     font-size: 40px;
     font-weight:600;
-    margin-right: auto;
 }
 .logo span{
     color: #3b3b3b
@@ -54,9 +52,7 @@ header{
     color:#3b3b3b;
     font-weight: 600;
 }
-.navbar.active{
-    transform: translateY(0);
-}
+
 .navbar a.active{
     color:#3b3b3b;
 }
@@ -74,6 +70,7 @@ header{
     font-size: 25px;
     margin-left: 10px;
     z-index:6;
+    color:#fff;
 }
 .section{
     padding: 0 8%;
@@ -205,13 +202,14 @@ header{
 .work-buttons{
     margin-bottom:10px;
     display:flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items:flex-start;
+    
+    justify-content: space-evenly;
 }
-.academic-box{
+.academic-box, .skills-box, .curriculum-box{
     max-height: 750px;
 }
+
 .toggle-button{
     margin-right:6rem;
     padding:0.5rem 0.5rem 0.5rem 0.5rem;
@@ -323,7 +321,9 @@ header{
 }
 .projects-content p{
     font-size: 14px;
-    text-align:justify;   
+    text-align:justify;
+    margin-top: 1rem;   
+    line-height: 1.5rem;
 }
 /*----styling contacts---->*/
 .contacts{
@@ -364,11 +364,7 @@ footer{
     padding: 1% 0 1% 0;
 }
 
-@media (max-width:768px){
-    logo{
-        font-size:24px;
-    }
-}
+
 /*@media (max-width: 1850px){
     header{
         padding: 15px 4%;
