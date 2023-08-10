@@ -138,7 +138,7 @@ header{
     justify-content: space-between;
    
 }
-.about-title{
+.about-header{
     color:#fff;
     font-size: 35px;
     text-align: center;
@@ -265,14 +265,16 @@ header{
     padding:2% 0;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    display:flex;
 }
 .project-section{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin : 2% auto;
     width:auto;
 }
+
 .projects-header{
     font-size: 35px;
     text-align: center;
@@ -282,22 +284,23 @@ header{
 }
 .projects-container{
     width: 20%; /* Three cards in one row with spacing */
-    margin-bottom: 20px;
     border: 1px solid #333;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-
+    border-radius: 8px;
+    box-shadow: 0 4px 5px #333;
+    height:auto;   
 }
+
 .project-img{
-    height: 25px;
-    width:auto;
+    height:50%;
+    align-items: center;
+    background-color: #fff; 
+    width:100%;
 }
 
 .projects-content{
     padding: 10px;
-    background-color: #333
+    background-color: #333;
+    height:50%;
 }
 .projects-content h3{
     text-align: center;
@@ -306,8 +309,22 @@ header{
 }
 .projects-content p{
     font-size: 14px;
-    text-align:justify;
-    
+    text-align:justify;   
+}
+/*----styling contacts---->*/
+.contacts{
+    margin:20px;
+    padding: 2% 0;
+    border-radius: 5px;
+    height:auto;
+    background-color: #333; 
+}
+.contacts-header{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top:0;
+    margin-bottom: 2rem;
 }
 /*@media (max-width: 1850px){
     header{
