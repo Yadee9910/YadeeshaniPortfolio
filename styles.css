@@ -13,6 +13,7 @@ body{
     overflow-x:hidden;
 }
 
+/*Styling the Header*/
 header{
     top:0;
     right:0;
@@ -23,7 +24,7 @@ header{
     align-items: center;
     justify-content:space-between;
     position: fixed;
-    padding:10px 8%;
+    padding:10px 5%;
     background: transparent;
     transition: all ease .45s;
     background-color: #ffae00;
@@ -32,6 +33,7 @@ header{
     color: #fff;
     font-size: 40px;
     font-weight:600;
+    margin-right: auto;
 }
 .logo span{
     color: #3b3b3b
@@ -52,7 +54,9 @@ header{
     color:#3b3b3b;
     font-weight: 600;
 }
-
+.navbar.active{
+    transform: translateY(0);
+}
 .navbar a.active{
     color:#3b3b3b;
 }
@@ -140,23 +144,24 @@ header{
 }
 .about-header{
     color:#fff;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
-    padding-bottom: 10px;
-    position: relative;   
+    padding-bottom: 20px;
+    position: relative; 
+    padding-top: 2em;  
 }
 
 .about-left{
     width:330px;
     height: auto;
     margin-left: 12%;
-    padding-bottom:2%;
     justify-content: flex-start;
 }
 .about-left img{
-    width:300px;
-    object-fit:c0ntain;  
+    width:100%;
+    object-fit:contain;  
     border-radius: 6px;
+    
 }
 .about-right{
     width: 60%;
@@ -168,10 +173,16 @@ header{
     justify-content:center;
     padding-right: 12%;
 }
+.about-span{
+    font-size: 30px;
+    color:#ffae00;
+    font-weight: 400;
+}
 .about-right p{
     text-align:justify;
     font-size:18px;
     width:80%;
+    line-height: 2rem;
 }
 .work{
     margin:20px;
@@ -179,18 +190,20 @@ header{
     border: 1px solid #ccc;
     border-radius: 5px;
     height:auto;
-    background-color: #333;  
+    background-color: #333;
 }
 
 .work-header{
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 10px;
     margin-top:0;
     margin-bottom: 2rem;
+    padding-top: 2em;
+    padding-bottom: 0;
 }
 .work-buttons{
-    margin-bottom:20px;
+    margin-bottom:10px;
     display:flex;
     align-items: center;
     flex-direction: row;
@@ -276,11 +289,12 @@ header{
 }
 
 .projects-header{
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 10px;
     margin-top:0;
     margin-bottom: 2rem;
+    padding-top: 2em;
 }
 .projects-container{
     width: 20%; /* Three cards in one row with spacing */
@@ -316,15 +330,44 @@ header{
     margin:20px;
     padding: 2% 0;
     border-radius: 5px;
-    height:auto;
     background-color: #333; 
 }
 .contacts-header{
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 10px;
     margin-top:0;
     margin-bottom: 2rem;
+}
+.contacts-icons{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    padding-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#bottom-icon{
+    cursor:pointer;
+    font-size:70px;
+    align-items:center;
+    color:#fff;
+    margin-right: 2em;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: #ffae00;
+    color:black;
+    text-align: center;
+    font-weight: 700;
+    padding: 1% 0 1% 0;
+}
+
+@media (max-width:768px){
+    logo{
+        font-size:24px;
+    }
 }
 /*@media (max-width: 1850px){
     header{
