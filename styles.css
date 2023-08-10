@@ -23,9 +23,10 @@ header{
     align-items: center;
     justify-content:space-between;
     position: fixed;
-    padding:20px 8%;
+    padding:10px 8%;
     background: transparent;
     transition: all ease .45s;
+    background-color: #ffae00;
 }
 .logo{
     color: #fff;
@@ -33,7 +34,7 @@ header{
     font-weight:600;
 }
 .logo span{
-    color: #ffae00;
+    color: #3b3b3b
 }
 .navbar{
     display:flex;
@@ -43,16 +44,17 @@ header{
 .navbar a{
     color: #fff;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin:0 18px;
     transition: all ease .50s;
 }
 .navbar a:hover{
-    color:#ffae00;
+    color:#3b3b3b;
+    font-weight: 600;
 }
 
 .navbar a.active{
-    color:#ffae00;
+    color:#3b3b3b;
 }
 .menu-btn{
     background: linear-gradient(13008deg, #383528 0%, #191919 100%);
@@ -126,7 +128,7 @@ header{
 
 .aboutsection{
     background:#3b3b3b;
-    padding: 73px 0;
+    padding: 40px 0;
     height:auto;  
 }
 .about-content{
@@ -147,10 +149,8 @@ header{
 .about-left{
     width:330px;
     height: auto;
-    border: 1px solid #ffae00;
     margin-left: 12%;
     padding-bottom:2%;
-    background: #ffae00;
     justify-content: flex-start;
 }
 .about-left img{
@@ -175,23 +175,129 @@ header{
 }
 .work{
     margin:20px;
-    padding: 73px 0;
+    padding: 2% 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     height:auto;
+    background-color: #333;  
 }
+
 .work-header{
-    display: flex;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top:0;
+    margin-bottom: 2rem;
+}
+.work-buttons{
+    margin-bottom:20px;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+}
+.academic-box{
+    max-height: 750px;
+}
+.toggle-button{
+    margin-right:6rem;
+    padding:0.5rem 0.5rem 0.5rem 0.5rem;
+    cursor:pointer;
+    font-weight: 550;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ffae00;
+    background-color: #ffae00;  
+}
+
+#academic-content{
+    display:none;
+    margin-top: 10%;
+}
+#academic-content ul li{
+    color:#ffae00;
+    font-weight: 500;
+    font-size: 16px;
+}
+#academic-content ul p{
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+#skills-content{
+    display:none;
+    margin-top:10%;
+}
+#skills-content ul li{
+    color:#ffae00;
+    font-weight: 500;
+    font-size: 16px;
+}
+#skills-content ol li{
+    color:#fff;
+    list-style:disc;
+    margin-left: 15%;
+    font-size: 14px;
+
+}
+#curriculum-content{
+    display:none;
+    margin-top:10%;
+}
+
+#curriculum-content ul li{
+    color:#ffae00;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#curriculum-content ul p{
+    font-size: 14px;
+    margin-left: 5%;
+}
+.academic-content p .skills-content p #curriculum-content p{
+    color: #fff;
+}
+
+.projects{
+    width:100%;
+}
+.projects-header{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top:0;
+    margin-bottom: 2rem;
+}
+.projects-container .projects-container01{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
+}
+.project-title{
+    font-size: 20px;
+    font-weight:700;
+    margin-top:15px;
     cursor: pointer;
 }
-.work-content{
-    display:none;
-    margin-top:10px;
+.postimage{
+    width: 100%;
+    object-fit:cover;
+    height:200px;
+    border-radius:5px;
 }
-.section-content.active{
-    display:block;
+.projects-description{
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+    margin-top:15px;
+    line-height:24px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 /*@media (max-width: 1850px){
     header{

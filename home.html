@@ -55,7 +55,7 @@
             <h2 class="about-title">About Me</h2>
             <div class="about-content">
                 <div class="about-left">
-                    <img src="images/about 4(1).png">
+                    <img src="images/about 5 (1).png">
                 </div>
                 <div class="about-right">
                     <p>Lorem ipsum, dolor sit amet consectetur
@@ -70,26 +70,129 @@
 
     <!---Work-->
     <section class="work">
-        <div class="work-header">
-            <h2>Work Experience</h2>
-        </div >
+            <h2 class="work-header">Work Experience</h2>
         <div class=work-buttons>
-            <button class="toggle-button">Academic Qualification</button>
-            <button class="toggle-button">Skills</button>
-            <button class="toggle-button">Curriculum Activities</button>
+            <div class="academic-box">
+                <button onclick="toggleContent('academic-content')" class="toggle-button">Academic Qualification</button>          
+                <div id="academic-content">
+                    <ul>
+                       <li>Bsc.(Hons) in Software Engineering</li> 
+                       <p>University of Kelaniya<br>
+                       2021-present<br>
+                       Current GPA - 3.0449</p><br>
+
+                       <li>Siridhamma College Galle</li>
+                       <p><b>G.C.E. A/L-Physical Stream</b><br>Combined Maths - A
+                       <br>Physics - B <br> Chemistry - C <br> Z- Score - 1.3239</p>
+                       <br>
+                       <p><b>G.C.E. O/L</b><br> 8A's and 1B</p><br>
+
+                       <li>Diploma In English Language</li>
+                       <p>British Way English Academy (2019)</p>          
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <button onclick="toggleContent('skills-content')" class="toggle-button">Skills</button>
+                <div id="skills-content">
+                    <ul>
+                        <li>Technical Skills</li>
+                        <br>
+                        <ol>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL/MongoDB</li>
+                            <li>React.js</li>
+                            <li> Java</li>
+                            <li>VCS(Git)</li>
+                        </ol>
+                        <br>
+
+                        <li>Soft Skills</li>
+                        <br>
+                         <ol>
+                            <li>Communication Skills</li>
+                            <li>Team Work</li>
+                            <li>Leadership</li>
+                            <li>Hardworking and Dedication</li>
+                            <li>Time Management</li>
+                         </ol>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curriculum-box">
+                <button onclick="toggleContent('curriculum-content')" class="toggle-button">Curriculum Activities</button>
+                <div id="curriculum-content">
+                    <ul>
+                        <li>IEEE Day Ambassador</li>
+                        <p>Sri Lanka Section<br> University of Kelaniya
+                        <br>2022</p><br>
+
+                        <li>Committee Member of WIE</li>
+                        <p>Affinity Group
+                        <br>University Of Kelaniya</p><br>
+
+                        <li>Committee Member of SESA</li><br>
+
+                        <li>Membership Development Lead of</li>
+                        <p>University of Kelaniya</p>
+                    </ul>
+                </div>
+            </div>                
+        </div> 
+    </section>
+
+    <!--Projects-->
+    <section class="projects">
+        <h2 class="projects-header">Projects</h2>
+
+        <div class="projects-container">
+            <img className="postimage"
+            src="https://plus.unsplash.com/premium_photo-1663852297433-c6634f7ef172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
+            alt=""/>
+
+            <div class="projects-content">
+                <span class="project-title">
+                    Lorem ipsum dolor sit amet
+                </span>
+            </div>
+
+            <div class="projects-description">
+                Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit. Perspiciatis debitis,
+                ratione, nobis id ipsam optio neque dicta,
+                molestias natus officiis explicabo modi 
+                ut non dolore culpa nesciunt esse iusto. 
+                Odit.
+            </div>
+
+
+            <img className="postimage"
+            src="https://plus.unsplash.com/premium_photo-1663852297433-c6634f7ef172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"
+            alt=""/>
+
+            <div class="projects-content">
+                <span class="project-title">
+                    Lorem ipsum dolor sit amet
+                </span>
+            </div>
+
+            <div class="projects-description">
+                Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit. Perspiciatis debitis,
+                ratione, nobis id ipsam optio neque dicta,
+                molestias natus officiis explicabo modi 
+                ut non dolore culpa nesciunt esse iusto. 
+                Odit.
+            </div>
         </div>
-        <div class="work-content">
-            <div class="academic-content">
-                <p>example for academic content</p>
-            </div>
-            <div class="skills-content">
-                <p>example for skills</p>
-            </div>
-            <div class="curriculum-content">
-                <p> example for curriculum</p>/
-            </div>
-        </div>
-        </section>
+
+
+        
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
