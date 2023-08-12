@@ -1,4 +1,5 @@
 // JavaScript function to toggle academic and curriculum content visibility
+
 function toggleContent(contentId) {
     
     var content = document.getElementById(contentId);
