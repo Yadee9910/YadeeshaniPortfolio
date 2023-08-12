@@ -10,3 +10,4 @@ function toggleContent(contentId) {
         content.style.display = 'none';
     }
 }
+
