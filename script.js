@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.addEventListener("click", function () {
             navbar.classList.remove("active"); // Close the menu
             menuIcon.classList.remove("fa-times"); // Reset the menu icon
-            menuIcon.classList.add("fa-bars");
+        git git     menuIcon.classList.add("fa-bars");
         });
     });
 });
