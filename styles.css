@@ -232,7 +232,7 @@ body{
     background-color:#3b3b3b;
     margin-top: 10px;
     padding: 20px 0;
-    height:auto;
+    height:100vh;
 }
 
 .about-content{
@@ -397,6 +397,28 @@ body{
     font-size: 16px;
 }
 
+#achievement-content ul li{
+    margin-top: 5px;
+    color:#ffae00;
+    font-weight: 600;
+    font-size: 20px;
+} 
+#achievement-content ul p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#experience-content ul li{
+    margin-top: 5px;
+    color:#ffae00;
+    font-weight: 600;
+    font-size: 20px;
+}
+#experience-content ul p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
 #skills-content ul li{
     color:#ffae00;
     font-weight: 600;
@@ -420,7 +442,7 @@ body{
     font-size: 16px;
 }
 
-.academic-content p .skills-content p #curriculum-content p{
+.academic-content p .skills-content p #curriculum-content p .achievement-content p .#experience-content {
     color: #fff;
 }
 

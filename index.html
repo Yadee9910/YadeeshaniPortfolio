@@ -40,7 +40,7 @@
                     </div>
                
                     <div class="main-btn">
-                        <a href="https://drive.google.com/file/d/1aXZb7KOdWf_Kv3EImLD_DMrSQpD7Bxg9/view?usp=drive_link"
+                        <a href="https://drive.google.com/file/d/17vM_zZEoD0b2zsjAVGRuFhKZ8-NYj8ZF/view?usp=sharing"
                            class="btn">Download CV
                         </a>
                     </div>
@@ -65,9 +65,9 @@
                         <div class="about-right">
                             <p>I'm <span class="about-span"> Yadeeshani Shakilanka Edirisinghe</span><br><br>
                             A Software Engineering Undergraduate of University of Kelaniya
-                            specializing in Web, Data Science, and Business.about-content
-                            I'm interested in IT Technologies and data science streams
-                            And also, I am capable of facing different kinds of chalenges And
+                            specializing in Web, Data Science, and Business. 
+                            I'm interested to work as a Front-end developer.
+                            And also, I am capable of facing different kinds of challenges And
                             critical situations in a positive manner and work with a strong
                             dedication to achieve my goals.</p>                    
                         </div>
@@ -80,6 +80,22 @@
                 <h2 class="work-header">Work Experience</h2>
                 
                 <div class=work-buttons>
+                    <button onclick="toggleContent('experience-content')" class="toggle-button">Work Experience</button>          
+                    <div id="experience-content" class="hide">
+                        <ul>
+                            <!-- <li>Associate Software Engineer at Future CX Pty Ltd</li> 
+                            <p>Have Experience on working as a Associate Front-end Developer for 3-months</p><br> -->
+
+                            <li>Internship at Future CX Pty Ltd</li> 
+                            <p>Worked as a Front-end Developer for 6-months</p><br>
+
+                            <li>Banking-Trainee - Galle Super Grade Branch</li>
+                            <p>Worked relating to customer service in the Front Office<br>and Back
+                            Office Operations. </p><br>
+         
+                        </ul>
+                    </div>
+
                     <button onclick="toggleContent('academic-content')" class="toggle-button">Academic Qualification</button>          
                         <div id="academic-content" class="hide">
                             <ul>
@@ -98,7 +114,19 @@
                             </ul>
                         </div>
                     
-
+                    <button onclick="toggleContent('achievement-content')" class="toggle-button">Achievements</button>          
+                        <div id="achievement-content" class="hide">
+                            <ul>
+                                <li>IEEE INSL 2022 Finalist </li> 
+                                <p>Member of the team SANTY that was selected as <br> finalist at the IEEE INSL
+                                    Western Province <br> Colombo North Divisional Competition 2022.</p><br>
+                        
+                                <li>CISCO Badge on Cybersecurity</li>
+                                <p>Earned a cisco badge for the successfully completion <br>
+                                   of the course Introduction to cybersecurity course                           
+                                </p><br>      
+                            </ul>
+                        </div>
                     
                     <button onclick="toggleContent('skills-content')" class="toggle-button">Skills</button>
                         <div id="skills-content" class="hide">
@@ -107,14 +135,16 @@
                                 <br>
                                 <ol>
                                     <li>React.js</li>
+                                    <li>JavaScript</li>
                                     <li>HTML</li>
                                     <li>CSS</li>
-                                    <li>JavaScript</li>
+                                    <li>Tailwind CSS</li>
                                     <li>MySQL</li>                                   
                                     <li> Java</li>
                                     <li>VCS(Git)</li>
-                                    <li>SpringBoot</li>
-                                    <li>MongoDB(Beginner)</li>
+                                    <li>Vue js</li>
+                                    <!-- <li>SpringBoot</li>
+                                    <li>MongoDB(Beginner)</li> -->
                                 </ol>
                                 <br>
 
@@ -135,21 +165,24 @@
                     <button onclick="toggleContent('curriculum-content')" class="toggle-button">Curriculum Activities</button>
                         <div id="curriculum-content" class='hide'>
                             <ul>
+                                <li>IEEE Membership Development Lead of</li>
+                                <p>University of Kelaniya (2023-2024)</p><br>
+
+                                <li>Committee Member of SESA</li>
+                                <p>SOftware Engineering Student Association (2023-2024)</p><br>
+
                                 <li>IEEE Day Ambassador</li>
                                 <p>Sri Lanka Section<br> University of Kelaniya
                                 <br>2022</p><br>
 
                                 <li>Committee Member of WIE</li>
                                 <p>Affinity Group
-                                <br>University Of Kelaniya</p><br>
-
-                                <li>Committee Member of SESA</li><br>
-
-                                <li>Membership Development Lead of</li>
-                                <p>University of Kelaniya</p><br>
+                                <br>University Of Kelaniya (2022-2023)</p><br>
 
                                 <li>IEEE Member</li>
-                                <p>IEEE Sri Lanka Section</p>
+                                <p>IEEE Sri Lanka Section</p><br>
+
+                                <li>Organizing Committee member of Realhack 4.0</li><br>
                             </ul>
                         </div>                           
                 </div> 
@@ -178,22 +211,6 @@
                         </div>
                     </div>
 
-                    <div class="projects-container">
-                        <a href="https://github.com/Yadee9910/BlogWriter">
-                            <img class="project-img" src="images/2.png" alt="BlogWriter"/>
-                        </a>
-
-                        <div class="projects-content">
-                            <a href="https://github.com/Yadee9910/BlogWriter">
-                                <h3>BlogWriter</h3>
-                            </a>
-                                <p>This is a platform for reading 
-                                    and writing articles. It is 
-                                    developing usingtechnologies 
-                                    such as Reactjs, Nodejs, MongoDB 
-                                    and Express.</p>                            
-                        </div>
-                    </div>
 
                     <div class="projects-container">
                         <a href="https://github.com/SeyonSuriya/ToyLand_Webstore">
@@ -211,6 +228,23 @@
                                     cart, and payment page.</p>
                         </div>
                     </div>  
+
+                    <div class="projects-container">
+                        <a href="https://github.com/Yadee9910/BlogWriter">
+                            <img class="project-img" src="images/2.png" alt="BlogWriter"/>
+                        </a>
+
+                        <div class="projects-content">
+                            <a href="https://github.com/Yadee9910/BlogWriter">
+                                <h3>BlogWriter</h3>
+                            </a>
+                                <p>This is a platform for reading 
+                                    and writing articles. It is 
+                                    developing usingtechnologies 
+                                    such as Reactjs, Nodejs, MongoDB 
+                                    and Express.</p>                            
+                        </div>
+                    </div>
                 </div>                 
             </section>
 
